@@ -5,12 +5,15 @@ class App < Sinatra::Base
     set :views, Proc.new { File.join(root, "../views/") }
     
   get '/' do 
-    erb :super_hero
+    erb :'../views/super_hero'
   end
   
   post '/teams' do 
     @team_name = 
-    erb :team 
+    @team_motto = 
+    @team
+    
+    erb :'../views/team' 
   end
   
 end
