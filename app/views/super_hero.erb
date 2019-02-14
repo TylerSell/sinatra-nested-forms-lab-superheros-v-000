@@ -5,8 +5,14 @@
 
     <form action="/teams" method="POST">
       <label for="team[name]">Team Name: </label>
-      <input type="text" name="team[name]" id="team[name]">
+      <input type="text" name="team[name]" id="team[name]"><br>
+      <label for="team[motto]">Team Motto: </label>
+      <input type="text" name="team[motto]" id="team[motto]"><br>
       
+      <h2>Hero 1</h2>
+      
+      <label for="team[name]">Team Name: </label>
+      <input type="text" name="team[members][][name]" id="team[name]"><br>
     </form>
   </body>
 </html>
